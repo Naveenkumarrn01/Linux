@@ -1,0 +1,28 @@
+/
+├── bin/             # Essential user binaries (like ls, cp)
+├── boot/            # Boot loader files (e.g., vmlinuz, grub)
+├── dev/             # Device files (e.g., /dev/sda, /dev/null)
+├── etc/             # System-wide configuration files
+├── home/            # Home directories for users (/home/user)
+├── lib/             # Essential shared libraries for /bin and /sbin
+├── lib64/           # 64-bit libraries (on 64-bit systems)
+├── media/           # Mount point for removable media (USB/CD)
+├── mnt/             # Temporary mount point for mounting filesystems
+├── opt/             # Optional/add-on software packages
+├── proc/            # Virtual filesystem with process and system info
+├── root/            # Home directory for the root user
+├── run/             # Runtime data (like PID files), cleared on reboot
+├── sbin/            # System binaries (admin commands)
+├── srv/             # Service data (e.g., for web servers, FTP)
+├── sys/             # Interface to the kernel (virtual filesystem)
+├── tmp/             # Temporary files (cleared on reboot)
+├── usr/             # Secondary hierarchy for user programs
+│   ├── bin/         # Non-essential user binaries
+│   ├── lib/         # Libraries for /usr/bin and /usr/sbin
+│   ├── local/       # User-installed software (not managed by distro)
+│   └── sbin/        # Non-essential system binaries
+└── var/             # Variable data (logs, spool files, etc.)
+    ├── log/         # Log files
+    ├── cache/       # Application cache data
+    ├── lib/         # Variable state information
+    └── tmp/         # Temporary files used by applications
