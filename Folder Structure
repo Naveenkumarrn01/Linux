@@ -1,0 +1,67 @@
+The Linux folder structure follows the Filesystem Hierarchy Standard (FHS), which defines the directory layout and contents in Linux-based systems. Here’s an overview of the key folders and their purposes:
+
+📁 / – Root Directory
+The top-level directory; everything starts from here.
+All other files and directories are subdirectories of /.
+
+📁 /bin – Essential User Binaries
+Contains basic Linux commands used by all users (e.g., ls, cp, mv, bash).
+
+Needed for booting and repairing the system.
+
+📁 /sbin – System Binaries
+Contains essential system commands (e.g., fsck, reboot, iptables) used mostly by the system administrator.
+
+📁 /etc – Configuration Files
+Contains system-wide configuration files (e.g., /etc/hostname, /etc/fstab, /etc/ssh/ssh_config).
+No binaries here.
+
+📁 /dev – Device Files
+Represents hardware devices as files (e.g., /dev/sda, /dev/null).
+Interacts with system hardware.
+
+📁 /proc – Process Information
+Virtual filesystem containing runtime system information (e.g., /proc/cpuinfo, /proc/1/status).
+Used to access process and kernel info.
+
+📁 /sys – System Information
+Interface to the kernel and hardware devices.
+Works closely with /proc.
+
+📁 /var – Variable Files
+Stores variable data like logs (/var/log), mail, and spools.
+Grows over time (log files, caches, etc.).
+
+📁 /tmp – Temporary Files
+Temporary files created by applications.
+Typically cleared on reboot.
+
+📁 /usr – User Programs and Data
+Contains user applications and files.
+/usr/bin – Non-essential user commands.
+/usr/sbin – Non-essential system commands.
+/usr/lib – Libraries for /usr/bin and /usr/sbin.
+/usr/share – Architecture-independent data.
+
+📁 /home – User Home Directories
+Each user has a subdirectory here (e.g., /home/alice).
+Contains personal files, configs, and documents.
+
+📁 /root – Root User’s Home Directory
+Home directory for the superuser (root), not to be confused with /.
+
+📁 /lib – Essential Libraries
+Shared libraries needed by binaries in /bin and /sbin.
+
+📁 /opt – Optional Software Packages
+Used for installing add-on application software packages.
+
+📁 /mnt and 📁 /media – Mount Points
+/mnt – Temporarily mounted filesystems.
+/media – Auto-mounted removable media (e.g., USB drives, CDs).
+
+📁 /boot – Boot Loader Files
+Contains kernel and bootloader files (e.g., vmlinuz, initrd.img, grub).
+
+📁 /run – Runtime Data
+Stores transient system info, such as process IDs and sockets, valid until reboot.
